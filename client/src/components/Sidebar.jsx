@@ -3,13 +3,23 @@ import { Stack } from "@mui/material";
 
 import { categories } from "../utils/constants";
 
+
+
+
 const SideBar = ({ selectedCategory, setSelectedCategory }) => (
   <Stack
-    direction="column" // Updated direction to column
-    spacing={2} // Added spacing between Stack items
+    direction="column"
+    spacing={2}
     sx={{
       overflowY: "auto",
       height: { sx: "auto", md: "95%" },
+      scrollbarWidth: "thin", // for Firefox
+      '&::-webkit-scrollbar': {
+        width: "6px",
+      },
+      '&::-webkit-scrollbar-thumb': {
+        backgroundColor: "#888",
+      },
     }}
   >
     {categories.map((category) => (
@@ -19,10 +29,10 @@ const SideBar = ({ selectedCategory, setSelectedCategory }) => (
         style={{
           background: category.name === selectedCategory && "#FC1503",
           color: "white",
-          display: "flex", // Added display flex for icon and name alignment
-          alignItems: "center", // Center items vertically
-          padding: "8px 16px", // Added padding for better spacing
-          borderRadius: "4px", // Added border radius for a rounded look
+          display: "flex",
+          alignItems: "center",
+          padding: "8px 16px",
+          borderRadius: "4px",
         }}
         key={category.name}
       >
