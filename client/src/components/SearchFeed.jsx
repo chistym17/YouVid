@@ -1,5 +1,5 @@
 
-const SeachFeed = () => {
+const SearchFeed = () => {
     return (
         <div>
             
@@ -7,4 +7,4 @@ const SeachFeed = () => {
     );
 };
 
-export default SeachFeed;
+export default SearchFeed;
