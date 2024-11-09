@@ -4,7 +4,7 @@ import { Box } from "@mui/material";
 
 import  Videos from "../components/Videos"
 import  ChannelCard from "../components/ChannelCard";
-import { fetchFromAPI } from "../utils/fetchFromAPI";
+import { fetchFromAPI } from "../utils/fetchFromApi.js"; // Add .js if necessary
 
 const ChannelDetail = () => {
   const [channelDetail, setChannelDetail] = useState();

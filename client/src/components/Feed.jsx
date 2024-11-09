@@ -3,7 +3,7 @@ import { Box, Stack, Typography } from "@mui/material";
 
 import  Sidebar  from "../components/Sidebar";
 import  Videos  from "../components/Videos";
-import { fetchFromAPI } from "../utils/fetchFromAPI";
+import { fetchFromAPI } from "../utils/fetchFromApi.js"; // Add .js if necessary
 
 const Feed = () => {
   const [selectedCategory, setSelectedCategory] = useState("New");

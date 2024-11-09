@@ -7,7 +7,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 import  Videos from "../components/Videos"
 import Loader from "../components/Loader";
-import { fetchFromAPI } from "../utils/fetchFromAPI";
+import { fetchFromAPI } from "../utils/fetchFromApi.js"; // Add .js if necessary
 
 const VideoDetail = () => {
   const [videoDetail, setVideoDetail] = useState(null);
